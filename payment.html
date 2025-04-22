@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
+
+      * {
+        font-family: "Poppins", sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        outline: none;
+        border: none;
+        text-transform: capitalize;
+        transition: all 0.2s linear;
+      }
+
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 25px;
+        min-height: 100vh;
+      }
+
+      .container form {
+        padding: 20px;
+        width: 700px;
+        background: #fff;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .container form .row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+      }
+
+      .container form .row .col {
+        flex: 1 1 250px;
+      }
+
+      .container form .row .col .title {
+        font-size: 20px;
+        color: #ed0d9b;
+        padding-bottom: 5px;
+        text-transform: uppercase;
+      }
+
+      .container form .row .col .inputBox {
+        margin: 15px 0;
+      }
+
+      .container form .row .col .inputBox span {
+        margin-bottom: 10px;
+        display: block;
+      }
+
+      .container form .row .col .inputBox input {
+        width: 100%;
+        border: 1px solid #ccc;
+        padding: 10px 15px;
+        font-size: 15px;
+        text-transform: none;
+      }
+
+      .container form .row .col .inputBox input:focus {
+        border: 1px solid #000;
+      }
+
+      .container form .row .col .flex {
+        display: flex;
+        gap: 15px;
+      }
+
+      .container form .row .col .flex .inputBox {
+        margin-top: 5px;
+      }
+      .container form .row .col .inputBox img {
+        height: 34px;
+        margin-top: 5px;
+        filter: drop-shadow(0 0 1px #000);
+      }
+
+      .container form .submit-btn {
+        
+        width: 30%;
+        padding: 12px;
+        font-size: 17px;
+        background: #fa0791;
+        color: #fff;
+        margin-top: 5px;
+        cursor: pointer;
+        border-radius: 5px;
+      }
+      .container form .btn{
+        text-align: center;
+      }
+      .container form .submit-btn:hover {
+        background: #ca0f85;
+      }
+    </style>
+    <link rel="stylesheet" href="asset/style.css" />
+    <title>Ladies Corner</title>
+  </head>
+  <body>
+    <!-- header section -->
+    <section id="header">
+      <a href="index.html"
+        ><img
+          src="./asset/img/Vastraz.png"
+          alt=""
+          class="logo"
+      /></a>
+      <nav id="nav">
+        <ul id="navbar">
+          <li><a href="index.html" id="home">Home</a></li>
+          <li><a href="shop.html" id="shop">Shop</a></li>
+          <li><a href="contact.html" id="contact">Contact</a></li>
+          <li>
+            <a href="cart.html" class="active" id="lg-bag"
+              ><i class="fa-solid fa-cart-shopping"></i
+            ></a>
+          </li>
+          <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
+          <li><a href="login.html" id="shop">Sign In</a></li>
+        </ul>
+      </nav>
+      <div id="mobile">
+        <a href="cart.html" id="cart"
+          ><i class="fa-solid fa-cart-shopping fa-xxl"></i
+        ></a>
+        <i id="bar" class="fas fa-outdent fa-xl"></i>
+      </div>
+    </section>
+    <!-- page Header -->
+    <section id="page-header" class="about-header-c">
+      <h2>Always Safe With Us</h2>
+      <p>No Worries With Every Payment</p>
+    </section>
+    <section id="payment">
+      <div class="container">
+        <form action="" id="payment-form">
+          <div class="row">
+            <div class="col">
+              <h3 class="title">Billing Address</h3>
+    
+              <div class="inputBox">
+                <span>Full Name :</span>
+                <input type="text" id="full-name" placeholder="Aditya Sharma" />
+              </div>
+              <div class="inputBox">
+                <span>Email :</span>
+                <input type="email" id="email" placeholder="example@example.com" />
+              </div>
+              <div class="inputBox">
+                <span>Address :</span>
+                <input type="text" id="address" placeholder="room - street - locality" />
+              </div>
+              <div class="inputBox">
+                <span>City :</span>
+                <input type="text" id="city" placeholder="Chandigarh" />
+              </div>
+    
+              <div class="flex">
+                <div class="inputBox">
+                  <span>State :</span>
+                  <input type="text" id="state" placeholder="India" />
+                </div>
+                <div class="inputBox">
+                  <span>Zip Code :</span>
+                  <input type="text" id="zip-code" placeholder="123 456" />
+                </div>
+              </div>
+            </div>
+    
+            <div class="col">
+              <h3 class="title">Payment</h3>
+    
+              <div class="inputBox">
+                <span>Cards Accepted :</span>
+                <img src="asset/img/card_img.png" alt="" />
+              </div>
+              <div class="inputBox">
+                <span>Name on Card :</span>
+                <input type="text" id="card-name" placeholder="Aditya Sharma" />
+              </div>
+              <div class="inputBox">
+                <span>Credit Card Number :</span>
+                <input type="number" id="card-number" placeholder="1111-2222-3333-4444" />
+              </div>
+              <div class="inputBox">
+                <span>Exp Month :</span>
+                <input type="text" id="exp-month" placeholder="January" />
+              </div>
+    
+              <div class="flex">
+                <div class="inputBox">
+                  <span>Exp Year :</span>
+                  <input type="number" id="exp-year" placeholder="2022" />
+                </div>
+                <div class="inputBox">
+                  <span>CVV :</span>
+                  <input type="text" id="cvv" placeholder="1234" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="btn">
+            <input type="submit" value="Pay" class="submit-btn" id="final-price" />
+          </div>
+        </form>
+      </div>
+    </section>
+    
+    <!-- Footer Section -->
+    <footer id="footer" class="section-p1 section-m1">
+      <div class="col">
+        <img
+          src="./asset/img/Vastraz.png"
+          alt=""
+        />
+        <h4>Contact</h4>
+        <p><strong>Address: </strong>Chitkara University</p>
+        <p><strong>Phone:</strong> 6284376084</p>
+        <p><strong>Hours:</strong> 9:00-17:00, Mon-Fri</p>
+        <!-- <h4>Follow Us</h4> -->
+        <ul>
+          <li>
+            <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+          </li>
+          <li>
+            <a href="https://chat.whatsapp.com/"><i class="fa-brands fa-whatsapp"></i></a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+          </li>
+          <li>
+            <a href="https://x.com/"><i class="fa-brands fa-twitter"></i></a>
+          </li>
+        </ul>
+      </div>
+      <div class="col">
+        <h4>About</h4>
+        <p><a href="contact.html">Delivery Information</a></p>
+        <p><a href="contact.html">Privacy Policy</a></p>
+        <p><a href="contact.html">Contact Us</a></p>
+      </div>
+      <div class="col">
+        <h4>My Account</h4>
+        <p><a href="login.html">Sign In</a></p>
+        <p><a href="cart.html">View Cart</a></p>
+        <p><a href="contact.html">Track My Order</a></p>
+        <p><a href="contact.html">help</a></p>
+      </div>
+    </footer>
+    <script src="asset/script.js"></script>
+    <script src="payment.js"></script>
+  </body>
+</html>
