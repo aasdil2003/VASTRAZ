@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="asset/style.css" />
+    <title>Ladies Corner</title>
+  </head>
+  <body>
+    <!-- header section -->
+    <section id="header">
+      <a href="index.html"
+        ><img
+          src="./asset/img/Vastraz.png"
+          alt=""
+          class="logo"
+      /></a>
+      <nav id="nav">
+        <ul id="navbar">
+          <li><a href="index.html" id="home" >Home</a></li>
+          <li><a href="shop.html" id="shop">Shop</a></li>
+          <li><a href="contact.html" id="contact">Contact</a></li>
+          <li><a href="cart.html" class="active" id="lg-bag"><i class="fa-solid fa-cart-shopping"></i></a></li>
+          <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
+          <li><a href="login.html" id="shop">Sign In</a></li>
+        </ul>
+      </nav>
+      <div id="mobile">
+        <a href="cart.html" id="cart"
+          ><i class="fa-solid fa-cart-shopping fa-xxl"></i
+        ></a>
+        <i id="bar" class="fas fa-outdent fa-xl"></i>
+      </div>
+    </section>
+    <!-- page Header -->
+    <section id="page-header" class="about-header-c">
+      <h2>Let's See</h2>
+      <p>Your Choice is always best</p>
+    </section>
+    <!-- cart Section -->
+    <section id="cart" class=" section-p1" >
+        <table width=100%>
+            <thead>
+                <tr>
+                    <td>Remove</td>
+                    <td>Image</td>
+                    <td>Product</td>
+                    <td>Price</td>
+                    <td>Quantity</td>
+                    <td>Subtotal</td>
+                </tr>
+            </thead>
+            <tbody>
+              <tr id="nth1">
+                <td>
+                  <a style="cursor: pointer;" onclick="nth1()" id="close-btn1"><i class="far fa-times-circle"></i></a>
+              
+                </td>
+                <td><img src="asset/img/products/f1.jpg" alt=""></td>
+                <td>Cotton Best T-shirts</td>
+                <td>599</td>
+                <td><input type="number" value="1" id="productN1"></td>
+                <td id="update1">599</td>
+              </tr>
+              <tr id="nth2">
+                <td>
+                  <a style="cursor: pointer;" onclick="nth2()" id="close-btn2"><i class="far fa-times-circle"></i></a>
+              
+                </td>
+                <td><img src="asset/img/products/f2.jpg" alt=""></td>
+                <td>Cotton Best T-shirts</td>
+                <td>399</td>
+                <td><input type="number" value="1" id="productN2"></td>
+                <td id="update2">399</td>
+              </tr>
+              <tr id="nth3">
+                <td>
+                  <a style="cursor: pointer;" onclick="nth3()" id="close-btn3"><i class="far fa-times-circle"></i></a>
+              
+                </td>
+                <td><img src="asset/img/products/f3.jpg" alt=""></td>
+                <td>Cotton Best T-shirts</td>
+                <td>299</td>
+                <td><input type="number" value="1" id="productN3"></td>
+                <td id="update3">299</td>
+              </tr>
+            </tbody>
+        </table>
+    </section>
+    <!-- pop up -->
+    <div class="popupbanner" id="Contacttimeoutbanner">
+      <a href="#" id="closeBtn"><i class="fa-solid fa-xmark"></i></a>
+      <h4>Congratulations! </h4>
+      <h2>You got rs 500 off</h2>
+    </div>
+    <!-- coupon and Total -->
+    <section id="cart-add" class="section-p1">
+      <div class="coupon">
+        <h3>Apply Coupon</h3>
+        <div>
+          <input type="text" placeholder="#FEE" id="input">
+          <button id="normal">Apply</button>
+        </div>
+      </div>
+      <!-- total -->
+      <div class="total">
+        <h3>Cart Total</h3>
+        <table>
+          <tr>
+            <td>Cart Subtotal</td>
+            <td id="final-value">1297</td>
+          </tr>
+          <tr>
+            <td>Shipping</td>
+            <td>Free</td>
+          </tr>
+          <tr id="sp-coupon">
+            <td>Offer from <span>Reshab Sir</span></td>
+            <td>rs 500 off</td>
+          </tr>
+          <tr>
+            <td><strong>Total</strong></td>
+            <td><strong id="offer">1297</strong></td>
+          </tr>
+        </table>
+        <a href="payment.html"><button>Proceed to checkout</button></a>
+      </div>
+    </section>
+    <!-- Footer Section -->
+    <footer id="footer" class="section-p1 section-m1">
+      <div class="col">
+        <img
+          src="./asset/img/Vastraz.png"
+          alt=""
+        />
+        <h4>Contact</h4>
+        <p><strong>Address: </strong>Chitkara University</p>
+        <p><strong>Phone:</strong> 6284376084</p>
+        <p><strong>Hours:</strong> 9:00-17:00, Mon-Fri</p>
+        <!-- <h4>Follow Us</h4> -->
+        <ul>
+          <li>
+            <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+          </li>
+          <li>
+            <a href="https://chat.whatsapp.com/"><i class="fa-brands fa-whatsapp"></i></a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+          </li>
+          <li>
+            <a href="https://x.com/"><i class="fa-brands fa-twitter"></i></a>
+          </li>
+        </ul>
+      </div>
+      <div class="col">
+        <h4>About</h4>
+        <p><a href="contact.html">Delivery Information</a></p>
+        <p><a href="contact.html">Privacy Policy</a></p>
+        <p><a href="contact.html">Contact Us</a></p>
+      </div>
+      <div class="col">
+        <h4>My Account</h4>
+        <p><a href="login.html">Sign In</a></p>
+        <p><a href="cart.html">View Cart</a></p>
+        <p><a href="contact.html">Track My Order</a></p>
+        <p><a href="contact.html">help</a></p>
+      </div>
+    </footer>
+    <script>
+    document.getElementById("closeBtn").addEventListener("click", (e) => {
+      document.getElementById("Contacttimeoutbanner").style.display = "none";
+      e.preventDefault();
+    });
+    </script>
+    <script src="asset/script.js"></script>
+  </body>
+</html>
