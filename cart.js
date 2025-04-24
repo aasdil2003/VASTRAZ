@@ -3,7 +3,7 @@ const cartTableBody = document.querySelector("#cart tbody");
 const cartTotalElement = document.getElementById("final-value");
 let cart = [];
 
-// Add to cart function
+
 function addToCart(id, name, price, image) {
   // Check if item is already in the cart
   const existingItem = cart.find(item => item.id === id);
