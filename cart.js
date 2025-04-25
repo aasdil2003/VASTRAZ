@@ -45,7 +45,7 @@ function updateCartUI() {
   updateCartTotal();
 }
 
-// Update cart total
+// Update cart totals
 function updateCartTotal() {
   const total = cart.reduce((acc, item) => acc + item.subtotal, 0);
   cartTotalElement.innerText = total;
