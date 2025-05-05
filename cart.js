@@ -1,4 +1,4 @@
-// Get elements
+//elements get
 const cartTableBody = document.querySelector("#cart tbody");
 const cartTotalElement = document.getElementById("final-value");
 let cart = [];
